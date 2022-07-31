@@ -2,7 +2,7 @@
 
 By Netnito1010 - netnito1010@gmail.com
 
-*Intro*
+**Intro**
 
 > Consider a situation that we have gotten a data of addresses of companies. We want to send a mail about our new product to each of the company in the list. However, the addresses we have doesn't contain postcode.
 
@@ -10,7 +10,7 @@ The aim of this project is to teach you how to use basic pandas to extract 'Prov
 
 ---
 
-*Table of Contents*
+**Table of Contents**
 
 - [Project "Find the Postcode"](#project-find-the-postcode)
   - [What we have and what we need before we begin this project](#what-we-have-and-what-we-need-before-we-begin-this-project)
