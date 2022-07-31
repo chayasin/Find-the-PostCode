@@ -21,6 +21,7 @@ The aim of this project is to teach you how to use basic pandas to extract 'Prov
     - [2 Check the addresses data](#2-check-the-addresses-data)
     - [3 Have fun with the postcode data](#3-have-fun-with-the-postcode-data)
     - [4 Have fun with the addresses data](#4-have-fun-with-the-addresses-data)
+      - [4.1 Clean the address](#41-clean-the-address)
 
 ---
 
@@ -96,6 +97,28 @@ Note: Without using *iloc* or *at* the data we get is *dataFrame* opject which i
 
 ### 4 Have fun with the addresses data
 
-Here wee will deal with the first row of the data first then we use for loop to apply the idea to the whole data.
+Here we will deal with the first few rows of the data then we use for loop to apply the idea to the whole data.
 
-Q1:
+Q1: Store the column 'Location' of the data in
+
+Q2: Store the first few row of data in **df_location_head**
+
+Hint: You might need to use something like *df.head()*
+
+Q3: Display the data and check the pattern
+
+One might notice that the Province is always the last word in the address. The seccond last is District and the third last is Tambon. Therefore, we will use this information to extract the data we need.
+
+#### 4.1 Clean the address
+
+Before we split the data we need to clean it first.
+
+Task1: Replace 'กทม.' with 'กรุงเทพมหานคร'
+
+Later, we will compare the province to the database and in the database Bangkok is refered as 'กรุงเทพมหานคร'.
+
+Task2: Remove 'อำเภอ', 'ตำบล', 'อ.', and 'ต.'
+
+Again, in the database we don't have the word 'อำเภอ', 'ตำบล', 'อ.', and 'ต.', therefore we don't need it.
+
+Task3: Split the data and store the province, district, and tambon in a new database called **df2**
